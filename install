@@ -142,7 +142,7 @@ if [[ "${build_relocatable}" == true ]]; then
         -Drocprim_DIR=${rocm_path}/rocprim \
         ${build_tests} ${build_type} ../../. # or cmake-gui ../.
 else
-    CXX=$rocm_path/bin/${compiler} ${cmake_executable} ${build_tests} ${build_type} ../../. # or cmake-gui ../.
+    CXX=$rocm_path/bin/${compiler} ${cmake_executable} ${build_tests} ${build_type} -DAMDGPU_TARGETS=gfx90a:xnack-\;gfx90a:xnack+ ../../. # or cmake-gui ../.
 fi
 check_exit_code "$?"
 
