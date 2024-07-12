@@ -7,7 +7,7 @@ environment hipCUB uses rocPRIM library as the backend, however, on CUDA platfor
 
 ## Requirements
 
-* Git
+* Gitasdasdasd
 * CMake (3.5.1 or later)
 * For AMD GPUs:
   * AMD [ROCm](https://rocm.github.io/install.html) platform (1.8.0 or later)
